@@ -23,9 +23,56 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+button{
+  padding: 10px;
+  margin-bottom: 10px;
+}
 
 .App-link {
   color: #61dafb;
+}
+.chatOuter{
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid black;
+}
+.inputWrapper{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.inputWrapper input{
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.chat{
+  margin: 10px;
+  border: 1px solid black;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.chatMessage{
+  text-align: left;
+  width: 300px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.ownMessage{
+  align-self: flex-start;
+  background-color: #61dafb;
+
+}
+.otherMessage{
+  align-self: flex-end;
+  background-color: greenyellow;
 }
 
 @keyframes App-logo-spin {
